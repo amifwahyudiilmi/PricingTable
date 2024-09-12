@@ -56,13 +56,13 @@ body{
 }
 .container {
     margin: 0 auto;
-    padding: 50px 0 0;
+    /* padding: 50px 0 0; */
     max-width: 960px;
     width: 100%;
-  }
+}
 .panel.pricing-table{
     background-color: white;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     padding: 15px 25px;
     width: 100%;
     max-width: 980px;
@@ -90,7 +90,7 @@ body{
     color: #015ff9;
 }
 img{
-    width: 227px;
+    width: 220px;
     height: 250px;
 }
 .pricing-features-item{
@@ -134,10 +134,17 @@ img{
     .panel.pricing-table {
         flex-direction: row;
         height: 680px;
+        border-radius: 20px;
     }
     .pricing-plan{
         border-bottom: none;
         border-right: 1px solid #e1f1ff;
         padding: 25px 50px;
+    }
+    .pricing-plan:last-child {
+        border-right: none;
+    }
+    .container{
+        padding: 50px 0 0;
     }
 }
